@@ -1,0 +1,72 @@
+body {
+    margin: 50px;
+    font-family: "Times New Roman ", "arial", monospace;
+    font-size: 15pt;
+}
+
+header {
+    font-family: "fantast", serif;
+    padding-bottom: 25px;
+	color: red;
+}
+
+header h1 {
+    letter-spacing: 4pt;
+    border-bottom: 10px solid black;
+    margin-bottom: 8px;
+	color: #800000;
+}
+
+header span {
+    font-size: 15pt;
+    float: right;
+	color: #800000;
+}
+
+section h2 {
+    font-family: "helvetica", serif;
+    font-size: 16pt;
+	color: #800000;
+}
+
+section p {
+    margin-left: 30px;
+}
+
+section.statementofpurpose {
+    margin-top: 30px;
+}
+
+.educationtable {
+    display: educationtable;
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin-left: 10px;
+}
+
+.columnrow {
+    display: column-row;
+}
+
+.educationtable {
+    display: column-cell;
+    font-style: bold;
+}
+
+.right {
+    display: table-cell;
+    text-align: right;
+}
+
+.cell {
+    display: column-cell;
+}
+
+.onlinecell {
+    font-style: bold;
+    padding-right: 10px;
+	
+	
+}
+
+
