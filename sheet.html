@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Technical Background</title>
+<style>
+  div {
+    background-color: #blue;
+    width: 50px;
+    border: 0.5px solid green;
+	cursor: alias;
+  }
+  button: pointer{
+  font-size: 13px;
+  }
+    </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<link rel = "stylesheet"  href="resume.css">
+<a href="resume.html" class="Resume">Resume</a>
+ </head>
+<body>
+<button id="pic1"> &hearts; Name</button>
+<button id="pic2"> &hearts; Navigation details</button>
+<div id="picture1">Venkat Madhav Venigalla</div>
+<div id="picture2">Let me nagivate you through the website details. Please press on the resume to see the technical details.</div>
+ <script>
+//
+ $( "#pic1" ).ready(function() {
+  $( "#picture1" )
+    .animate({
+      width: "30%"
+    }, {
+      queue: true,
+      duration: 6000
+    })
+    .animate({ fontSize: "18px" }, 2500 )
+    .animate({ borderRightWidth: "25px" }, 2500 );
+});
+ 
+$( "#pic2" ).click(function() {
+  $( "#picture2" )
+    .animate({ width: "50%" }, 600 )
+    .animate({ fontSize: "12px" }, 15000 )
+    .animate({ borderightWidth: "12px" }, 6000 );
+});
+ </script>
+ <body>
+<script>
+$( document.body ).click(function() {
+  $( "div" ).each(function( i ) {
+    if ( this.style.color !== "orange" ) {
+      this.style.color = "orange";
+    } else {
+      this.style.color = "green";
+    }
+  });
+});
+</script>
+<img src="images/download.PNG" width="250" height="300" alt=""/>
+</aside>
+<section class="sectionRight">
+</body>
+</html>
+
+

@@ -1,21 +1,32 @@
 <!DOCTYPE html>
    <head>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
       <title>Professional resume</title>
-      <link href="resume.css" rel="stylesheet" type="text/css">
-      <input type="button" value = "Linkedin resume" onclick = "window.open('https://www.linkedin.com/in/madhavvenigalla')"/>
+	  <nav>
+	  
+<a href="sheet.html" class="sheet">Home</a>
+
+</nav>
+
+      <link href="resume.css" rel="stylesheet" type="text/css"></a>
+	   <a href="resume.docx" target="">Resume Download</a>
+	  
+      <input type="button" value = "Linkedinresumelink" onclick = "window.open('https://www.linkedin.com/in/madhavvenigalla')"/>
    </head>
    <!--============
       FIRST PAGE HEADER
       ===============-->
    <body>
-      <header id="columnrow">
+   <div class="header">
+      <header id="columnrow">  
          <h1>Full Name</h1>
          <p>Venkat Madhav Venigalla</p>
-         <span>
+		          <span>
             18 Suncrest CT, 
             <p>Poughkeepsie, NY, 12601</p>
-            8456309412;
-            venkat.venigalla1@marist.edu
+            8456309412;<p>
+            venkat.venigalla1@marist.edu</p>
+
          </span>
       </header>
       <section id="statement">
@@ -31,7 +42,11 @@
       <section id="EducationwithWork">
          <h2>Education</h2>
          <section>
-            <div class="marist college">
+		 
+		 <script>
+
+</script>
+ 
                <div class="columnrow">
                   <span class="classname">Marist college</span>
                   <span class="right">December 2016 - Present</span>
@@ -72,6 +87,8 @@
          SKILLS SECTION
          ============-->
       <section id="skills">
+	  <a href="projects.html" class="Projects">Projects</a>
+	
          <h2>Skills</h2>
          <div class="rowtable">
             <div class="cloumnrow">
@@ -93,7 +110,9 @@
       <!--============
          Social ServiceSECTION
          ============-->
+		 
       <h2>SocialService</h2>
+
       <div class="Socialservicetable">
          <div class="columnrow">
             <span class="jobtitle">National Service Sceheme</span>
@@ -111,29 +130,58 @@
          </div>
       </div>
       <section id="online">
+	  <style>
+p{
+color: blue;
+margin: 7px;
+cursor: pointer;
+}
+p:hover{
+background: green;
+box-shadow: inset 0 0 0 4px #3a7999;
+animation
+}
+</style>
          <h2>Online</h2>
          <div class="table">
          <div class="tablerow">
             <span class="onlinecell">Website:</span>
-            <span class="urlcell">www.intelagator.com</span>
-         </div>
+			<input type="button" value = "Mywebsite" onclick = "window.open('https://www.intelagator.com')"/>
+                  </div>
          <div class="columnrow">       
          </div>
-      </section>
+      </section
       <div class="pagebreak"></div>
       <section class="Statementofpurpose" id="StatementofPurpose">
-         <p>Dear Sir,</p>
-         <p>I have opted for Industrial Engineering as my major during undergraduate studies. 
-            Industrial Engineering is like a bridge between business processes and optimization of work to achieve business goals. 
-            It was during my study in engineering, I was exposed to various problem solving techniques in Production Planning,
+<script>
+$( "div" ).click(function() {
+  $( this ).slideUp();
+});
+</script>
+
+         <p class="black">
+		 <p id="demo" onclick="myFunction()">Click here</p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "I have opted for Industrial Engineering as my major during undergraduate studies";
+}
+</script>
+           <p> It was during my study in engineering, I was exposed to various problem solving techniques in Production Planning,
             Information science, Supply Chain Management, Enterprise Resource Planning (ERP) and Complex Distribution plans which 
             improve profits. As an academic project, I had carried a mini research project titled “Market Optimization” at GITAM University. 
             This project was emphasized on Fast Moving Consumer Goods (FMGC). The demand for FMGC products during festive season will be huge.
             In order to handle the situation I have initiated a process on Value Chain Management which enables the vendors and customers to have a hassle free shopping.
             However, my research to optimize was partially successful since this project involved a lot of data to be ascertained from different sources while I was working on it. 
             I had come to a conclusion that after this project the Data mining or Data extraction plays a vital role in every division of business. 
-            This provoked me to take up an internship focusing on Data.
-         </p>
+            This provoked me to take up an internship focusing on Data.</p>
+			<script>
+<script>
+$( "p" ).click(function() {
+  $( this ).toggleClass( "highlight" );
+});
+</script>
+</script>
          <p>Sincerely,</p>
          <p>Venkat Madhav Venigalla</p>
       </section>
