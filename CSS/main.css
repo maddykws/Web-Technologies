@@ -1,0 +1,122 @@
+
+	 article,
+	 aside,
+	 details,
+	 figcaption,
+	 figure,
+	 footer,
+	 header,
+	 hgroup,
+	 menu,
+	 nav,
+	 section {
+	     display: block;
+	 }
+	 body {
+	     line-height: 1;
+	 }
+	 ol,
+	 ul {
+	     list-style: none;
+	 }
+	 blockquote,
+	 q {
+	     quotes: none;
+	 }
+	 blockquote:before,
+	 blockquote:after,
+	 q:before,
+	 q:after {
+	     content: '';
+	     content: none;
+	 }
+	 table {
+	     border-collapse: collapse;
+	     border-spacing: 0;
+	 }
+	 body {
+	     -webkit-text-size-adjust: none;
+	 }
+
+	 
+	 *,
+	 *:before,
+	 *:after {
+	    
+	     box-sizing: border-box;
+	 }
+	
+	 
+	 
+	 @media screen and (max-width: 480px) {
+	     html,
+	     body {
+	         min-width: 320px;
+	     }
+	 }
+	 body {
+	     background: #1b1f22;
+	 }
+
+#header nav ul {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    margin-bottom: 0;
+    
+}
+#header nav ul li {
+    padding-left: 0;
+    border-left: solid 1px #ffffff;
+}
+#header nav ul li:first-child {
+    border-left: 0;
+}
+#header nav ul li a {
+    display: block;
+    min-width: 7.5rem;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    
+}
+#header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+#header nav ul li a:active {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+#header nav.use-middle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    width: 1px;
+    height: 100%;
+    background: #ffffff;
+}
+#header nav.use-middle ul li.is-middle {
+    border-left: 0;
+}
+body.is-article-visible #header {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    
+}
+body.is-loading #header {
+    -moz-filter: blur(0.125rem);
+    -webkit-filter: blur(0.125rem);
+    -ms-filter: blur(0.125rem);
+    filter: blur(0.125rem);
+}
+body.is-loading #header > * {
+    opacity: 0;
+}
+body.is-loading #header .content .inner {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+}
