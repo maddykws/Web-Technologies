@@ -1,0 +1,20 @@
+{
+      "A1": [{
+          "id": "1",
+          "statename": "Reason of contact"
+      }, {
+          "id": "2",
+          "statename": "Job offer"
+      }, {
+          "id": "3",
+          "": "Mentoring"
+      }, {
+          "stateid": "5",
+          "statename": "Nevada"
+      }, {
+          "stateid": "6",
+          "statename": "Massachusetts"
+      }]
+  };
+ 
+   

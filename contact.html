@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <body>
+	  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+   <script src="script/jquery-3.2.1.min.js" type="text/javascript"></script>
+   <script src="script/asd.js" type="text/javascript"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("phd.json", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+     
+   </script>
+   </body>
+      <meta charset="UTF-8">
+      <title>Contact</title>
+      <link href="main.css" rel="stylesheet" type="text/css">
+	  
+	  <!--This represent CSS Style for the website-->
+	  
+      <style type="text/css">
+         body {
+         background-image:url(images/contact.jpg);
+         background-size:contain;
+         background-attachment:fixed;
+         }
+      </style>
+	  
+	  <!----------------------------------------------------------------->
+      <link rel="icon" type="image/ico" href="favicon.ico">
+      <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/source-sans-pro:n2:default;league-gothic:n4:default;bitter:n4:default.js" type="text/javascript"></script>
+   </head>
+   <body>
+   <!--------------------->
+   <!--------------------->
+	   <nav class="navbar navbar-default">
+      <div class="container-fluid">
+	   <div class="navbar-header">
+	<div class ="navbar-brand">
+  </div>
+  <ul class="nav navbar-tabs">
+    <li class="active"><a href="#">Website</a></li>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+	  <!--This shows the website twitter information-->
+	  
+	  
+	  
+      <aside class="asideLeft">
+         <a  class="twitter-timeline" href="https://twitter.com/madhav.venigalla"><img src="images/tw.png" width="50" height="50" alt=""/></a>
+      </aside>
+      <section class="sectionRight">
+         <h2>contact </h2>
+		 
+		 
+		 <!--This clearly represents the contact form of the website, indentation and how the form works-->
+		 
+		 
+         <form action="https://formspree.io/madhav.venigalla@gmail.com"
+            method="POST">
+            <ul><label for="Name">Sender Name</label></ul>
+            <ul><input type="text" name="sender name" ></ul>
+           <ul> <label for="field-id" style="line-height:14px;">Subject</label><br></ul>&nbsp;&nbsp;
+           <ul> <input type="text" id="field-id"></ul>
+		   
+		   
+            <label for="message"></label> <!--Special characters are given to the form to send button to easily understand where to go ahead-->
+			
+			
+            <label for="field-id" style="line-height:14px;">Message</label><br>&nbsp;&nbsp;
+           <ul> <input type="text" id="field-id"></ul>
+		    <ul><label for="Name">Email ID</label></ul>
+          <br>  <input type="email" name="_replyto" required></br>
+            <ul><input type="submit" value="Send" class="btn btn-info" onclick="validateEmail(document.form1.text1)"></ul>
+            <select id="list">
+				
+			
+               <ul>
+                  <option value="1">Reason of contact Drop down here</option>
+               </ul>
+               <option value="2">Mentoring</option>
+               <option value="3">Job offer required</option>
+               <option value="4">other</option>
+            </select>
+         </form>
+		 <!-------------------> 
+
+	 
+		 
+      </section>
+      <footer>Madhav Venigalla.</footer>
+   </body>
+</html>
